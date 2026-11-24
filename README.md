@@ -31,7 +31,7 @@ Tuned Random Forest detail: precision 0.973, recall 0.942, F1 score 0.957.
 pip install -r requirements.txt
 ```
 
-Place the Kaggle files at `../Datasets/archive/train.csv` and `../Datasets/archive/test.csv` relative to the notebook, or edit the two `read_csv` paths in the loading cell to wherever you put them. Then run `airline_passenger_satisfaction.ipynb` top to bottom.
+Download the dataset from Kaggle (link above) and put `train.csv` and `test.csv` in a `data/` folder next to the notebook. The loading cell finds the dataset on its own: it checks `data/` first, then a Kaggle extract at `Datasets/archive/` beside or above the notebook, then searches the nearby folders. You can also set the `PASSENGER_DATA_DIR` environment variable to the folder holding the files. Then run `airline_passenger_satisfaction.ipynb` top to bottom.
 
 ## Tech
 
